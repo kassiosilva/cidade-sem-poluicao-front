@@ -1,0 +1,19 @@
+body {
+    background-color: #adaaff;
+}
+
+.custom-width {
+    max-width: 500px;
+    margin-left: 50px; 
+    margin-top: 20px;
+}
+
+.custom-button {
+    margin-left: 50px; 
+}
+
+.form-label {
+    font-family: 'Inter black';
+    font-weight: bold;
+    color: white;
+}

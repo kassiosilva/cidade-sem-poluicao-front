@@ -1,0 +1,27 @@
+body {
+    background-color: #adaaff;
+}
+
+h1 {
+    font-family: 'Inter' , sans-serif;
+    font-size: 16pt;
+    color: white;
+    text-align: center;
+    margin: 10px;
+    font-weight: bold;
+}
+
+.card-s {
+    margin-top: 70px;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+}
+
+.card-i {
+    margin-top: 95px;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+}
+
