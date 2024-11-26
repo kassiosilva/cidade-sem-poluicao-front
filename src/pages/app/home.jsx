@@ -1,6 +1,6 @@
-import './dashboard.css'
+import './home.css'
 
-export function Dashboard() {
+export function Home() {
   return (
     <main className="vh-100">
       <header>
