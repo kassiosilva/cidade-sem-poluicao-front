@@ -1,7 +1,7 @@
 import { BrowserRouter, Route, Routes } from 'react-router'
 
+import { Donations } from './pages/app/donations'
 import { Home } from './pages/app/home'
-import { SignIn } from './pages/auth/sign-in'
 import { SignUp } from './pages/auth/sign-up'
 
 export function RoutesConfig() {
@@ -9,7 +9,7 @@ export function RoutesConfig() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/signin" element={<SignIn />} />
+        <Route path="/donations" element={<Donations />} />
         <Route path="/signup" element={<SignUp />} />
       </Routes>
     </BrowserRouter>
