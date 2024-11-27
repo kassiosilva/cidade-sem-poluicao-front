@@ -1,0 +1,17 @@
+.main {
+  background-color: #adaaff;
+}
+
+.main h1 {
+  color: white;
+  font-family: 'Inter black' , sans-serif;
+  font-size: 16pt;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.card {
+  margin-top: 80px;
+  align-items: center;
+  margin-left: 530px;
+}
