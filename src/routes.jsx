@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Routes } from 'react-router'
 
+import { ContactUs } from './pages/app/contact-us'
 import { Donations } from './pages/app/donations'
 import { Home } from './pages/app/home'
 import { RegisterDonor } from './pages/app/register-donor'
@@ -13,6 +14,7 @@ export function RoutesConfig() {
         <Route path="/donations" element={<Donations />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/register-donor" element={<RegisterDonor />} />
+        <Route path="/contact-us" element={<ContactUs />} />
       </Routes>
     </BrowserRouter>
   )
