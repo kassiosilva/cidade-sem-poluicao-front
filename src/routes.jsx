@@ -5,6 +5,7 @@ import { Donations } from './pages/app/donations'
 import { EnvironmentalAwareness } from './pages/app/environmental-awareness'
 import { Home } from './pages/app/home'
 import { RegisterDonor } from './pages/app/register-donor'
+import { WasteInfo } from './pages/app/waste-info'
 import { SignUp } from './pages/auth/sign-up'
 
 export function RoutesConfig() {
@@ -20,6 +21,7 @@ export function RoutesConfig() {
           path="/environmental-awareness"
           element={<EnvironmentalAwareness />}
         />
+        <Route path="/wast-information" element={<WasteInfo />} />
       </Routes>
     </BrowserRouter>
   )
