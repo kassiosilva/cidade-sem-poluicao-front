@@ -1,0 +1,51 @@
+.main {
+  background-color: #adaaff;
+  color: white;
+  font-family: 'Inter' , sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.main h1 {
+  margin: 0;
+  font-size: 20pt;
+  padding-top: 20px;
+  font-weight: bold;
+}
+
+.cardsS {
+  margin-top: 100px;
+  position: relative;
+  margin-left: 40px;
+  justify-content: space-around;
+  display: flex;
+}
+
+.cardsI {
+  margin-top: 200px;
+  position: relative;
+  margin-left: 40px;
+  justify-content: space-around;
+  display: flex;
+}
+
+.cardTitle {
+  color: black;
+  font-weight: bold;
+  font-size: 20pt;
+}
+
+.cardText {
+  color: black;
+}
+
+.main h2 {
+  color: white;
+  font-family: 'Inter black' , sans-serif;
+  font-size: 16pt;
+  margin-top: 40px;
+  text-align: left;
+  margin-left: 20px;
+  font-weight: bold;
+}
