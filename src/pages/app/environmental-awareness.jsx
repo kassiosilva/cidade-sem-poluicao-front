@@ -1,3 +1,5 @@
+import { Link } from 'react-router'
+
 import GarrafasImg from '../../images/garrafas.png'
 import PapelHigienicoImg from '../../images/papel-higienico.png'
 import ReciclagemImg from '../../images/reciclagem.png'
@@ -63,7 +65,8 @@ export function EnvironmentalAwareness() {
       />
 
       <p className={styles.textoDireitaImagem}>
-        SE DESEJA ADQUIRIR CARTILHAS EDUCATIVAS, CLIQUE AQUI
+        SE DESEJA ADQUIRIR CARTILHAS EDUCATIVAS,{' '}
+        <Link to="/learn-more">CLIQUE AQUI</Link>
       </p>
     </div>
   )

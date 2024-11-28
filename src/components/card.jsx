@@ -8,12 +8,14 @@ export function Card({
 }) {
   return (
     <div className={`card ${className}`} style={{ width: '18rem' }}>
-      <img src={imgSrc} className="card-img-top" alt="Marquise Ambiental" />
+      {!!imgSrc && (
+        <img src={imgSrc} className="card-img-top" alt="Marquise Ambiental" />
+      )}
 
       <div className="card-body">
         <h5 className="card-title">{title}</h5>
 
-        <p className="card-text">{description}</p>
+        {!!description && <p className="card-text">{description}</p>}
 
         <button onClick={onClick} className="btn btn-primary stretched-link">
           {buttonText}

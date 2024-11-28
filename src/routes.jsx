@@ -5,6 +5,7 @@ import { DonationsPoints } from './pages/app/donation-points'
 import { Donations } from './pages/app/donations'
 import { EnvironmentalAwareness } from './pages/app/environmental-awareness'
 import { Home } from './pages/app/home'
+import { LearnMore } from './pages/app/learn-more'
 import { RegisterDonor } from './pages/app/register-donor'
 import { WasteCollectionInfo } from './pages/app/waste-collection-info'
 import { WasteInfo } from './pages/app/waste-info'
@@ -26,6 +27,7 @@ export function RoutesConfig() {
         <Route path="/wast-information" element={<WasteInfo />} />
         <Route path="/wast-collection-info" element={<WasteCollectionInfo />} />
         <Route path="/donation-points" element={<DonationsPoints />} />
+        <Route path="/learn-more" element={<LearnMore />} />
       </Routes>
     </BrowserRouter>
   )

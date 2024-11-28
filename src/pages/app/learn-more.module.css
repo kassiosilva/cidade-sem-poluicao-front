@@ -1,0 +1,27 @@
+.main {
+  background-color: #adaaff;
+  height: 100vh;
+}
+
+.main h1 {
+  font-family: 'Inter' , sans-serif;
+  font-size: 16pt;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-weight: bold;
+}
+
+.cardS {
+  margin-top: 70px;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+}
+
+.cardI {
+  margin-top: 95px;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+}
