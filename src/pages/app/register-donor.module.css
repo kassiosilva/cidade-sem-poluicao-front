@@ -7,7 +7,7 @@
   padding: 0;
 }
 
-header {
+.header {
   background-color: #27457b;
   height: 100px;
   color: white;
@@ -16,29 +16,12 @@ header {
   justify-content: center;
 }
 
-h1 {
+.header h1 {
   margin: 0;
   font-size: 24pt;
 }
 
-.form-group {
-  margin-top: 40px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding-left: 20px;
-  margin-left: 160px;
-}
-
-.form-container {
-  margin-top: 50px;
-  text-align: left;
-  width: 300px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-input[type="text"] {
+.inputContainer input[type="text"] {
   width: 400px;
   height: 50px;
   background-color: white;
@@ -53,7 +36,7 @@ input[type="text"] {
   box-sizing: border-box;
 }
 
-input[type="text"]::placeholder {
+.inputContainer input[type="text"]::placeholder {
   color: #808080;
   font-family: 'Inter Black', sans-serif;
   font-size: 10pt;
@@ -64,7 +47,7 @@ input[type="text"]::placeholder {
   transform: translateY(-10px);
 }
 
-input[type="email"] {
+.inputContainer input[type="email"] {
   width: 400px;
   height: 50px;
   background-color: white;
@@ -79,7 +62,7 @@ input[type="email"] {
   box-sizing: border-box;
 }
 
-input[type="email"]::placeholder {
+.inputContainer input[type="email"]::placeholder {
   color: #808080;
   font-family: 'Inter Black', sans-serif;
   font-size: 10pt;
@@ -90,7 +73,7 @@ input[type="email"]::placeholder {
   transform: translateY(-10px);
 }
 
-input[type="tel"] {
+.inputContainer input[type="tel"] {
   width: 400px;
   height: 50px;
   background-color: white;
@@ -105,7 +88,7 @@ input[type="tel"] {
   box-sizing: border-box;
 }
 
-input[type="tel"]::placeholder {
+.inputContainer input[type="tel"]::placeholder {
   color: #808080;
   font-family: 'Inter Black' , sans-serif;
   font-size: 10pt;
@@ -116,7 +99,7 @@ input[type="tel"]::placeholder {
   transform: translateY(-10px);
 }
 
-input {
+.inputContainer input {
   width: 219px;
   height: 40px;
   padding: 10px;
@@ -125,7 +108,7 @@ input {
   border-radius: 5px;
 }
 
-.input-container {
+.inputContainer {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -136,7 +119,7 @@ input {
   flex: 1;
 }
 
-.input-container input {
+.inputContainer input {
   width: 400px;
   height: 50px;
   padding: 8px;
@@ -144,7 +127,7 @@ input {
   border-radius: 0;
 }
 
-button#cadastre-se {
+.inputContainer button {
   width: 200px;
   height: 50px;
   background-color: #27457b;
@@ -155,12 +138,4 @@ button#cadastre-se {
   font-size: 14pt;
   margin-top: 20px;
   cursor: pointer;
-}
-
-.input-row {
-  display: flex;
-  justify-content: flex-start;
-  gap: 40px;
-  margin-left: 160px;
-  align-items: flex-start;
 }

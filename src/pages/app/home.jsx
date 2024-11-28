@@ -1,9 +1,14 @@
-import './home.css'
+import { useNavigate } from 'react-router'
+
+import { ButtonFeature } from '../../components/button-feature'
+import styles from './home.module.css'
 
 export function Home() {
+  const navigate = useNavigate()
+
   return (
-    <main className="vh-100">
-      <header>
+    <main className={`${styles.main} vh-100`}>
+      <header className={styles.header}>
         <h1>
           SEJA BEM VINDO (A) AO
           <br />
@@ -11,34 +16,28 @@ export function Home() {
         </h1>
       </header>
 
-      <div className="botton-container-1">
-        <div className="botton-container-se">
-          <button type="button" className="btn btn-light">
-            FAÇA AQUI SUAS
-            <br />
-            DOAÇÕES
-          </button>
-        </div>
-        <div className="botton-container-sd">
-          <button type="button" className="btn btn-light">
-            ACOMPANHE AQUI OS DIAS DE COLETA DE LIXO
-          </button>
-        </div>
+      <div className={styles.buttonContainer1}>
+        <ButtonFeature
+          text={'FAÇA AQUI SUAS \n DOAÇÕES'}
+          onClick={() => navigate('/donations')}
+        />
+
+        <ButtonFeature
+          text="ACOMPANHE AQUI OS DIAS DE COLETA DE LIXO"
+          onClick={() => navigate('/wast-collection-info')}
+        />
       </div>
 
-      <div className="botton-container-2">
-        <div className="botton-container-ie">
-          <button type="button" className="btn btn-light">
-            CONSCIÊNCIA
-            <br />
-            AMBIENTAL
-          </button>
-        </div>
-        <div className="botton-container-id">
-          <button type="button" className="btn btn-light">
-            FALE CONOSCO
-          </button>
-        </div>
+      <div className={styles.buttonContainer2}>
+        <ButtonFeature
+          text={'CONSCIÊNCIA \n AMBIENTAL'}
+          onClick={() => navigate('/environmental-awareness')}
+        />
+
+        <ButtonFeature
+          text="FALE CONOSCO"
+          onClick={() => navigate('/contact-us')}
+        />
       </div>
     </main>
   )

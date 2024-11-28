@@ -1,3 +1,6 @@
+import { Card } from '../../components/card'
+import PrefeituraLogo from '../../images/prefeitura-fortaleza.png'
+import { redirectExternalLink } from '../../utils/redirect-external-link'
 import styles from './donation-points.module.css'
 
 export function DonationsPoints() {
@@ -10,17 +13,17 @@ export function DonationsPoints() {
         CLIQUE NO LINK ABAIXO
       </h1>
 
-      <div className={styles.card} style={{ width: '18rem' }}>
-        <div className="card-body">
-          <h5 className="card-title">SITE DA PREFEITURA DE FORTALEZA</h5>
-          <a
-            href="https://catalogodeservicos.fortaleza.ce.gov.br/categoria/urbanismo-meio-ambiente/servico/122"
-            className="card-link"
-          >
-            Ir para o site
-          </a>
-        </div>
-      </div>
+      <Card
+        title="Prefeitura de Fortaleza"
+        description="O site de Fortaleza disponibiliza diversas informações, incluindo também sobre o ambiente da cidade"
+        imgSrc={PrefeituraLogo}
+        className={styles.card}
+        onClick={() =>
+          redirectExternalLink(
+            'https://catalogodeservicos.fortaleza.ce.gov.br/categoria/urbanismo-meio-ambiente/servico/122',
+          )
+        }
+      />
     </div>
   )
 }
