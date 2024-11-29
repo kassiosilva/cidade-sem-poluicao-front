@@ -67,7 +67,6 @@ export function RegisterDonor() {
                 value={email}
                 onChange={handleEmail}
                 required
-                autoFocus
               />
             </div>
           </div>
@@ -82,7 +81,6 @@ export function RegisterDonor() {
                 value={phone}
                 onChange={handlePhone}
                 required
-                autoFocus
                 pattern="(\d{3}\d{3}\d{3}\d{2})"
                 maxLength="11"
               />
