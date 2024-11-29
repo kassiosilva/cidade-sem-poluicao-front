@@ -25,7 +25,10 @@ export function Donations() {
       </div>
 
       <div className={styles.buttonContainer2}>
-        <ButtonFeature text="MENU ANTERIOR" onClick={() => navigate(-1)} />
+        <ButtonFeature
+          text="REGISTRE AQUI A SUA DOAÇÃO"
+          onClick={() => navigate('/register-donation')}
+        />
       </div>
     </div>
   )
