@@ -12,7 +12,7 @@ export function Home() {
         <h1>
           SEJA BEM VINDO (A) AO
           <br />
-          PROJETO FORTALEZA LIMPA!
+          PROJETO CIDADE SEM POLUIÇÃO!
         </h1>
       </header>
 
