@@ -8,7 +8,7 @@ import styles from './environmental-awareness.module.css'
 
 export function EnvironmentalAwareness() {
   return (
-    <div className={`${styles.main} vh-100`}>
+    <div className={styles.main}>
       <header className={styles.header}>
         <h1>
           CONTRIBUA PARA UMA
@@ -58,16 +58,18 @@ export function EnvironmentalAwareness() {
         </div>
       </div>
 
-      <img
-        src={ReciclagemImg}
-        alt="Reciclagem"
-        className={styles.imagemBaixa}
-      />
+      <footer className={styles.footer}>
+        <img
+          src={ReciclagemImg}
+          alt="Reciclagem"
+          className={styles.imagemBaixa}
+        />
 
-      <p className={styles.textoDireitaImagem}>
-        SE DESEJA ADQUIRIR CARTILHAS EDUCATIVAS,{' '}
-        <Link to="/learn-more">CLIQUE AQUI</Link>
-      </p>
+        <p className={styles.textoDireitaImagem}>
+          SE DESEJA ADQUIRIR CARTILHAS EDUCATIVAS,{' '}
+          <Link to="/learn-more">CLIQUE AQUI</Link>
+        </p>
+      </footer>
     </div>
   )
 }

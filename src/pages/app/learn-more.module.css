@@ -1,6 +1,6 @@
 .main {
   background-color: #adaaff;
-  height: 100vh;
+  height: 100%;
 }
 
 .main h1 {
@@ -16,12 +16,14 @@
   margin-top: 70px;
   justify-content: space-around;
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
+  gap: 16px;
 }
 
 .cardI {
   margin-top: 95px;
   justify-content: space-around;
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
+  gap: 16px
 }
